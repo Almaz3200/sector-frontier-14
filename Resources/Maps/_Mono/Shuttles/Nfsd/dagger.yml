@@ -4,8 +4,13 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
+<<<<<<< Updated upstream
   time: 01/12/2026 17:21:01
   entityCount: 638
+=======
+  time: 01/12/2026 16:38:28
+  entityCount: 633
+>>>>>>> Stashed changes
 maps: []
 grids:
 - 1
@@ -700,6 +705,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,2.5
       parent: 1
+<<<<<<< Updated upstream
 - proto: AtmosDeviceFanDirectional
   entities:
   - uid: 634
@@ -731,6 +737,8 @@ entities:
     - type: Transform
       pos: -2.5,5.5
       parent: 1
+=======
+>>>>>>> Stashed changes
 - proto: Bed
   entities:
   - uid: 264
@@ -2695,7 +2703,11 @@ entities:
       pos: 2.5,9.5
       parent: 1
     - type: Door
+<<<<<<< Updated upstream
       secondsUntilStateChange: -6155.0127
+=======
+      secondsUntilStateChange: -6037.3535
+>>>>>>> Stashed changes
       state: Opening
 - proto: Poweredlight
   entities:
