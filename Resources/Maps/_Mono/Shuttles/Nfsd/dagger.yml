@@ -4,13 +4,8 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-<<<<<<< Updated upstream
-  time: 01/12/2026 17:21:01
-  entityCount: 638
-=======
-  time: 01/12/2026 16:38:28
+  time: 01/18/2026 07:58:21
   entityCount: 633
->>>>>>> Stashed changes
 maps: []
 grids:
 - 1
@@ -549,72 +544,75 @@ entities:
     - type: Transform
       pos: 6.5,0.5
       parent: 1
-- proto: AirlockNfsd
-  entities:
-  - uid: 31
-    components:
-    - type: Transform
-      pos: 0.5,12.5
-      parent: 1
-  - uid: 213
-    components:
-    - type: Transform
-      pos: 1.5,7.5
-      parent: 1
-  - uid: 214
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 4.5,-4.5
-      parent: 1
-  - uid: 215
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,2.5
-      parent: 1
-  - uid: 217
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -3.5,-4.5
-      parent: 1
-  - uid: 236
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,-3.5
-      parent: 1
-  - uid: 631
-    components:
-    - type: Transform
-      pos: 0.5,-0.5
-      parent: 1
-- proto: AirlockShuttleNfsd
+- proto: AirlockNfsdLocked
   entities:
   - uid: 20
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,1.5
+      rot: 1.5707963267948966 rad
+      pos: 0.5,-0.5
       parent: 1
   - uid: 21
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,0.5
+      rot: 1.5707963267948966 rad
+      pos: -3.5,2.5
+      parent: 1
+  - uid: 31
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,12.5
       parent: 1
   - uid: 209
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: 9.5,1.5
+      pos: 4.5,-4.5
       parent: 1
   - uid: 210
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
+      pos: 1.5,7.5
+      parent: 1
+  - uid: 213
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,-3.5
+      parent: 1
+  - uid: 214
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-4.5
+      parent: 1
+- proto: AirlockShuttleNfsdLocked
+  entities:
+  - uid: 215
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 9.5,1.5
+      parent: 1
+  - uid: 217
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
       pos: 9.5,0.5
+      parent: 1
+  - uid: 236
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -8.5,1.5
+      parent: 1
+  - uid: 629
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -8.5,0.5
       parent: 1
 - proto: AmeController
   entities:
@@ -705,40 +703,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,2.5
       parent: 1
-<<<<<<< Updated upstream
-- proto: AtmosDeviceFanDirectional
-  entities:
-  - uid: 634
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 9.5,1.5
-      parent: 1
-  - uid: 635
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,0.5
-      parent: 1
-  - uid: 636
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,1.5
-      parent: 1
-  - uid: 637
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 9.5,0.5
-      parent: 1
-  - uid: 638
-    components:
-    - type: Transform
-      pos: -2.5,5.5
-      parent: 1
-=======
->>>>>>> Stashed changes
 - proto: Bed
   entities:
   - uid: 264
@@ -1975,22 +1939,26 @@ entities:
     - type: Transform
       pos: -0.5,14.5
       parent: 1
+- proto: Firelock
+  entities:
+  - uid: 630
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 0.5,12.5
+      parent: 1
+  - uid: 631
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.5,7.5
+      parent: 1
 - proto: FirelockGlass
   entities:
   - uid: 212
     components:
     - type: Transform
       pos: 0.5,-0.5
-      parent: 1
-  - uid: 629
-    components:
-    - type: Transform
-      pos: 1.5,7.5
-      parent: 1
-  - uid: 630
-    components:
-    - type: Transform
-      pos: 0.5,12.5
       parent: 1
 - proto: FloorDrain
   entities:
@@ -2703,11 +2671,7 @@ entities:
       pos: 2.5,9.5
       parent: 1
     - type: Door
-<<<<<<< Updated upstream
-      secondsUntilStateChange: -6155.0127
-=======
-      secondsUntilStateChange: -6037.3535
->>>>>>> Stashed changes
+      secondsUntilStateChange: -6208.202
       state: Opening
 - proto: Poweredlight
   entities:
