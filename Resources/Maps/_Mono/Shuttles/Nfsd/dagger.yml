@@ -4,7 +4,7 @@ meta:
   engineVersion: 268.0.0
   forkId: ""
   forkVersion: ""
-  time: 01/30/2026 20:59:58
+  time: 01/30/2026 21:06:26
   entityCount: 686
 maps: []
 grids:
@@ -890,6 +890,8 @@ entities:
     - type: Transform
       pos: -2.5,6.5
       parent: 1
+- proto: BlastDoorOpen
+  entities:
   - uid: 659
     components:
     - type: Transform
@@ -3004,7 +3006,7 @@ entities:
       pos: 2.5,9.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13474.159
+      secondsUntilStateChange: -13859.119
       state: Opening
 - proto: PlastitaniumWindow
   entities:
@@ -3448,7 +3450,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-5.5
       parent: 1
-- proto: SuitStorageNfsdCombat
+- proto: SuitStorageCadet
   entities:
   - uid: 454
     components:
