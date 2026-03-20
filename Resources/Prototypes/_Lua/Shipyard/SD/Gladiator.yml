@@ -9,7 +9,7 @@
   name: Гладиатор
   description: Тяжелобронированный шаттл с 4 крупнокалиберными орудиями "kargil"
   limit: 4
-  price: 125000
+  price: 135000
   category: Medium
   group: Security
   whitelist:
@@ -27,7 +27,7 @@
   mapPath: /Maps/_Lua/Shuttles/SD/Gladiator.yml
   minPlayers: 0
   stations:
-    VasKoGladiator:
+    GFPurga:
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup

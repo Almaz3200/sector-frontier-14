@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/20/2026 12:17:24
+  time: 03/20/2026 14:57:34
   entityCount: 398
 maps: []
 grids:
@@ -1538,7 +1538,7 @@ entities:
       pos: -1.5,5.5
       parent: 1
     - type: Battery
-      startingCharge: 248.33336
+      startingCharge: 248.00003
     - type: ApcPowerReceiver
       powerLoad: 10
     - type: ApcPowerReceiverBattery
@@ -1993,7 +1993,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-3.5
       parent: 1
-- proto: SMESAdvanced
+- proto: SMESBasic
   entities:
   - uid: 253
     components:
