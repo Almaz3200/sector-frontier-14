@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/20/2026 14:57:34
-  entityCount: 398
+  time: 03/20/2026 15:43:45
+  entityCount: 399
 maps: []
 grids:
 - 1
@@ -455,7 +455,6 @@ entities:
   - uid: 42
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
       pos: 0.5,2.5
       parent: 1
   - uid: 53
@@ -1538,7 +1537,7 @@ entities:
       pos: -1.5,5.5
       parent: 1
     - type: Battery
-      startingCharge: 248.00003
+      startingCharge: 247.6667
     - type: ApcPowerReceiver
       powerLoad: 10
     - type: ApcPowerReceiverBattery
@@ -2983,6 +2982,13 @@ entities:
     components:
     - type: Transform
       pos: -3.5,-0.5
+      parent: 1
+- proto: WarpPoint
+  entities:
+  - uid: 324
+    components:
+    - type: Transform
+      pos: 0.5,0.5
       parent: 1
 - proto: WeaponCapacitorRecharger
   entities:
