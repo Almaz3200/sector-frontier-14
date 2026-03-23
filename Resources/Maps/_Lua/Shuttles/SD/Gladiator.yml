@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2026 13:00:04
+  time: 03/23/2026 14:20:33
   entityCount: 414
 maps: []
 grids:
@@ -427,6 +427,7 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: ShipCpuLimit
   - uid: 62
     mapInit: true
     paused: true
@@ -1619,7 +1620,7 @@ entities:
       pos: -1.5,5.5
       parent: 1
     - type: Battery
-      startingCharge: 124.000015
+      startingCharge: 123.83335
     - type: ApcPowerReceiver
       powerLoad: 5
     - type: ApcPowerReceiverBattery
@@ -1795,17 +1796,28 @@ entities:
     mapInit: true
     paused: true
     components:
+    - type: MetaData
+      name: VasKo
     - type: Transform
-      pos: -0.53125,-3.4757257
+      pos: -0.4609375,-3.4878345
       parent: 1
     - type: Paper
-      stampState: paper_stamp-nf-signature
+      stampState: paper_stamp-detective
       stampedBy:
+      - reapply: False
+        stampType: RubberStamp
+        stampedColor: '#966432FF'
+        stampedName: VasKo Corporation
       - reapply: False
         stampType: Signature
         stampedColor: '#333333FF'
         stampedName: Василий Колодки
       content: Выработку повысить до 40 кВт
+    - type: Tag
+      tags:
+      - Document
+      - Paper
+      - NFPaperStampProtected
     - type: Fixtures
       fixtures:
         fix1:
@@ -1845,7 +1857,7 @@ entities:
       containers:
       - food
     - type: EmitSoundOnCollide
-      nextSound: -2578.7896566
+      nextSound: -1256.7195623
     - type: ContainerContainer
       containers:
         solution@food: !type:ContainerSlot
@@ -1854,7 +1866,7 @@ entities:
       residues: []
       dnas: []
       fibers:
-      - кремовый изолирующие волокна ; 1918CF22DFA1DE
+      - кремовый изолирующие волокна ; 9F7FF46245686A
       fingerprints: []
 - proto: PortableGeneratorSuperPacmanShuttle
   entities:
