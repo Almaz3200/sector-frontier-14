@@ -4,7 +4,7 @@
 # Author: almaz3200 (discord)
 
 - type: vessel
-  parent: BaseVessel
+  parent: BaseVesselAntag
   id: VasKoFracture
   name: Fracture
   description: Передовой шаттл поддержки с мощными ЭМИ-пушками и парой тяжелых артиллерийских орудий
