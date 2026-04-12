@@ -4,10 +4,10 @@
 # Author: almaz3200 (discord)
 
 - type: vessel
+  parent: BaseVessel
   id: Fracture
-  parent: BaseVesselAntag
   name: Fracture
-  description: Передовой шаттл поддержки с сильными ЭМИ-пушками и парой тяжелых артиллерийских орудий
+  description: Передовой шаттл поддержки с мощными ЭМИ-пушками и парой тяжелых артиллерийских орудий
   limit: 4
   price: 160000
   category: Medium
@@ -24,7 +24,7 @@
 - type: gameMap
   id: VasKoFracture
   mapName: 'Fracture'
-  mapPath: /Maps/_Mono/Shuttles/Nfsd/fracture.yml
+  mapPath: /Maps/_Lua/Shuttles/SD/Fracture.yml
   minPlayers: 0
   stations:
     VasKoFracture:
