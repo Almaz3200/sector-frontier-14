@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 272.0.0
+  engineVersion: 275.1.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2026 14:20:33
-  entityCount: 414
+  time: 05/01/2026 08:15:31
+  entityCount: 413
 maps: []
 grids:
 - 1
@@ -559,6 +559,13 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-0.5
+      parent: 1
+- proto: BoxBeaker
+  entities:
+  - uid: 283
+    components:
+    - type: Transform
+      pos: 1.5217268,-1.3286664
       parent: 1
 - proto: BoxHandcuff
   entities:
@@ -1619,7 +1626,7 @@ entities:
       pos: -1.5,5.5
       parent: 1
     - type: Battery
-      startingCharge: 123.83335
+      startingCharge: 122.500015
     - type: ApcPowerReceiver
       powerLoad: 5
     - type: ApcPowerReceiverBattery
@@ -1713,7 +1720,7 @@ entities:
     - type: Transform
       pos: -2.5,-1.5
       parent: 1
-- proto: MachineWarpDrive
+- proto: MachineFTLDrive600
   entities:
   - uid: 361
     components:
@@ -1726,6 +1733,18 @@ entities:
     components:
     - type: Transform
       pos: 3.5,-3.5
+      parent: 1
+- proto: MedkitCombatFilled
+  entities:
+  - uid: 272
+    components:
+    - type: Transform
+      pos: 1.3473649,-1.3626256
+      parent: 1
+  - uid: 278
+    components:
+    - type: Transform
+      pos: 1.6702814,-1.5813756
       parent: 1
 - proto: NfsdDeployableBarrier
   entities:
@@ -1740,34 +1759,6 @@ entities:
     components:
     - type: Transform
       pos: 1.5,9.5
-      parent: 1
-- proto: NFWeaponEnergyRifleCarbine
-  entities:
-  - uid: 283
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.3828927,7.475795
-      parent: 1
-  - uid: 320
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.6641427,7.475795
-      parent: 1
-- proto: NFWeaponRifleAssaultLecter
-  entities:
-  - uid: 272
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.3555429,8.561692
-      parent: 1
-  - uid: 278
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.6524179,8.577317
       parent: 1
 - proto: NitrogenCanister
   entities:
@@ -2089,14 +2080,14 @@ entities:
     - type: Transform
       pos: -0.5,-1.5
       parent: 1
-- proto: SuitStorageCadet
+- proto: SuitStorageEVANfsd
   entities:
-  - uid: 360
+  - uid: 320
     components:
     - type: Transform
       pos: -0.5,8.5
       parent: 1
-  - uid: 372
+  - uid: 360
     components:
     - type: Transform
       pos: -0.5,7.5
