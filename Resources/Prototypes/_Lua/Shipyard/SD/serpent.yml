@@ -1,0 +1,42 @@
+# LuaWorld - This file is licensed under AGPLv3
+# Copyright (c) 2025 LuaWorld Contributors
+# See AGPLv3.txt for details.
+# Author: almaz3200 (discord)
+
+- type: vessel
+  parent: BaseVessel
+  id: VasKoSerpent
+  name: Serpent
+  description: Флагман СРБС, Настоящая передвижная база с толстой бронёй и тяжелым вооружением
+  limit: 1
+  price: 500000
+  category: Large
+  group: Security
+  access: Armory
+  whitelist:
+  - Luna
+  - Frontier
+  class:
+  - Nfsd # Lua
+  - Medical # Lua
+  - Chemistry # Lua
+  - Capital
+  - Fighter
+  engine:
+  - Bluespace
+  shuttlePath: /Maps/_Lua/Shuttles/SD/Serpent.yml
+
+- type: gameMap
+  id: VasKoSerpent
+  mapName: 'Serpent'
+  mapPath: /Maps/_Lua/Shuttles/SD/Serpent.yml
+  minPlayers: 0
+  stations:
+    VasKoSerpent:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Serpent {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
