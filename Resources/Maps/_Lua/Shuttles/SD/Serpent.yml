@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.1.0
   forkId: ""
   forkVersion: ""
-  time: 06/25/2026 14:16:48
-  entityCount: 1661
+  time: 06/25/2026 14:25:01
+  entityCount: 1663
 maps: []
 grids:
 - 1
@@ -1160,7 +1160,7 @@ entities:
       pos: -1.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -24018.31
+      secondsUntilStateChange: -24041.678
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3667,6 +3667,18 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.60714,19.58558
       parent: 1
+  - uid: 1662
+    components:
+    - type: Transform
+      parent: 1223
+    - type: Physics
+      canCollide: False
+  - uid: 1663
+    components:
+    - type: Transform
+      parent: 1238
+    - type: Physics
+      canCollide: False
 - proto: ChemDispenser
   entities:
   - uid: 931
@@ -5373,7 +5385,7 @@ entities:
       pos: -1.5,10.5
       parent: 1
     - type: Battery
-      startingCharge: 946.66675
+      startingCharge: 933.33344
     - type: ApcPowerReceiver
       powerLoad: 50
     - type: ApcPowerReceiverBattery
@@ -10848,12 +10860,32 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,23.5
       parent: 1
+    - type: BallisticAmmoProvider
+      entities:
+      - 1662
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 1662
   - uid: 1238
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,23.5
       parent: 1
+    - type: BallisticAmmoProvider
+      entities:
+      - 1663
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 1663
 - proto: WeaponTurretCyrexa
   entities:
   - uid: 1184
