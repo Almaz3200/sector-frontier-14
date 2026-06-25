@@ -4,7 +4,7 @@
 # Author: almaz3200 (discord)
 
 - type: vessel
-  parent: BaseVesselAntag
+  parent: BaseVessel
   id: VasKoSerpent
   name: Serpent
   description: Флагман СРБС, Настоящая передвижная база с толстой бронёй и тяжелым вооружением
@@ -33,7 +33,7 @@
   minPlayers: 0
   stations:
     VasKoSerpent:
-      stationProto: StandardFrontierSecurityVessel
+      stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
         mapNameTemplate: 'Serpent {1}'
