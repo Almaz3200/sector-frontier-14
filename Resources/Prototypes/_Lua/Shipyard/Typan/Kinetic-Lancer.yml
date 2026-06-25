@@ -1,10 +1,15 @@
+# LuaWorld - This file is licensed under AGPLv3
+# Copyright (c) 2025 LuaWorld Contributors
+# See AGPLv3.txt for details.
+# Authors: almaz3200, c_quarian & donevinoll (discord)
+
 - type: vessel
   id: SUNKineticLancer
   parent: BaseVesselAntag
   name: Kinetic-Lancer
   description: Передовой, боевой шаттл синдиката. Особая компоновка и тяжелое вооружение делают его одним из сильнейших боевых шаттлов что поставленны на боевое патрулирование владений Трёхглава. В сектор Фронтир прибывают штучно.
   limit: 1
-  price: 400000 # 2000 below max
+  price: 400000
   category: Large
   group: Typan
   access: SyndicateAgent
