@@ -4,7 +4,7 @@
 # Author: almaz3200 (discord)
 
 - type: vessel
-  parent: BaseVessel
+  parent: BaseVesselAntag
   id: VasKoSerpent
   name: Serpent
   description: Флагман СРБС, Настоящая передвижная база с толстой бронёй и тяжелым вооружением
