@@ -1,0 +1,36 @@
+- type: vessel
+  id: SUNKineticLancer
+  parent: BaseVesselAntag
+  name: Kinetic-Lancer
+  description: Передовой, боевой шаттл синдиката. Особая компоновка и тяжелое вооружение делают его одним из сильнейших боевых шаттлов что поставленны на боевое патрулирование владений Трёхглава. В сектор Фронтир прибывают штучно.
+  limit: 1
+  price: 400000 # 2000 below max
+  category: Large
+  group: Typan
+  access: SyndicateAgent
+  guidebookPage: Null
+  whitelist:
+  - Luna
+  - Frontier
+  class:
+  - Syndicate
+  - Medical # Lua
+  - Capital # Lua
+  engine:
+  - Bluespace
+  shuttlePath: /Maps/_Lua/Shuttles/Typan/Kinetic-lancer.yml
+
+- type: gameMap
+  id: SUNKineticLancer
+  mapName: 'Kinetic-Lancer'
+  mapPath: /Maps/_Lua/Shuttles/Typan/Kinetic-lancer.yml
+  minPlayers: 0
+  stations:
+    SUNKineticLancer:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Kinetic-Lancer {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
