@@ -4,7 +4,7 @@
 # Authors: almaz3200, c_quarian & donevinoll (discord)
 
 - type: vessel
-  id: SUNKineticLancer
+  id: SYNKineticLancer
   parent: BaseVesselAntag
   name: Kinetic-Lancer
   description: Передовой, боевой шаттл синдиката. Особая компоновка и тяжелое вооружение делают его одним из сильнейших боевых шаттлов что поставленны на боевое патрулирование владений Трёхглава. В сектор Фронтир прибывают штучно.
@@ -26,12 +26,12 @@
   shuttlePath: /Maps/_Lua/Shuttles/Typan/Kinetic-lancer.yml
 
 - type: gameMap
-  id: SUNKineticLancer
+  id: SYNKineticLancer
   mapName: 'Kinetic-Lancer'
   mapPath: /Maps/_Lua/Shuttles/Typan/Kinetic-lancer.yml
   minPlayers: 0
   stations:
-    SUNKineticLancer:
+    SYNKineticLancer:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
