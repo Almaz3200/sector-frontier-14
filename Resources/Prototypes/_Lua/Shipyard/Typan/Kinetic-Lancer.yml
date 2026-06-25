@@ -23,12 +23,12 @@
   - Capital # Lua
   engine:
   - Bluespace
-  shuttlePath: /Maps/_Lua/Shuttles/Typan/Kinetic-lancer.yml
+  shuttlePath: /Maps/_Lua/Shuttles/Typan/Kinetic-Lancer.yml
 
 - type: gameMap
   id: SYNKineticLancer
   mapName: 'Kinetic-Lancer'
-  mapPath: /Maps/_Lua/Shuttles/Typan/Kinetic-lancer.yml
+  mapPath: /Maps/_Lua/Shuttles/Typan/Kinetic-Lancer.yml
   minPlayers: 0
   stations:
     SYNKineticLancer:
