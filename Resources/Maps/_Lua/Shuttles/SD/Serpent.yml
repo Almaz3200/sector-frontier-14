@@ -4,7 +4,7 @@ meta:
   engineVersion: 275.1.0
   forkId: ""
   forkVersion: ""
-  time: 06/25/2026 13:29:43
+  time: 06/25/2026 14:16:48
   entityCount: 1661
 maps: []
 grids:
@@ -1121,11 +1121,25 @@ entities:
     - type: Transform
       pos: -2.5,20.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        1055:
+        - - DoorStatus
+          - Toggle
   - uid: 960
     components:
     - type: Transform
       pos: 3.5,20.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        871:
+        - - DoorStatus
+          - Toggle
 - proto: AirlockNfsdLocked
   entities:
   - uid: 22
@@ -1146,7 +1160,7 @@ entities:
       pos: -1.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -23936.629
+      secondsUntilStateChange: -24018.31
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1479,11 +1493,25 @@ entities:
     - type: Transform
       pos: 3.5,21.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        960:
+        - - DoorStatus
+          - AutoClose
   - uid: 1055
     components:
     - type: Transform
       pos: -2.5,21.5
       parent: 1
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        820:
+        - - DoorStatus
+          - AutoClose
 - proto: BoxBeaker
   entities:
   - uid: 980
@@ -5345,7 +5373,7 @@ entities:
       pos: -1.5,10.5
       parent: 1
     - type: Battery
-      startingCharge: 960.00006
+      startingCharge: 946.66675
     - type: ApcPowerReceiver
       powerLoad: 50
     - type: ApcPowerReceiverBattery
